@@ -5,6 +5,7 @@ title: ""
 unit: []
 source_type: ""
 origin: ""
+teacher_provided: null
 source_file: ""
 received: ""
 extraction_method: ""
@@ -16,11 +17,12 @@ student_checked: false
 
 **This Digest proves that the contents inside a source were not missed. It is not a polished study note.**
 
-Template: replace blanks before use. `unit` is a list of consistent unit names. `origin` must become `teacher`, `external`, or `AI-added`; dates use `YYYY-MM-DD`. `source_file` identifies the preserved original or URL. Status follows [[99_System/Source-Registry#Status Gates|Registry gates]]. AI extraction is a draft until verified.
+Template: replace blanks before use. `unit` is a list of consistent unit names. `origin` is `teacher`, `textbook`, `external`, or `AI-added`; `teacher_provided` is `true`, `false`, or `null` (unknown). Dates use `YYYY-MM-DD`. `source_file` identifies the preserved original or URL. Status follows [[99_System/Source-Registry#Status Gates|Registry gates]]. AI extraction stays student-unconfirmed until Justin checks it; coverage verification is a separate named-human check.
 
 ## Source Information
 
 - Source ID / title / original author:
+- Teacher supplied or assigned / evidence (separate from authorship and emphasis):
 - Original file or URL / preserved copy location:
 - Full assigned extent / total size:
 - Unit Map link(s):
@@ -28,6 +30,8 @@ Template: replace blanks before use. `unit` is a list of consistent unit names. 
 - Teacher-stated exam scope / evidence: unknown
 - Priority: normal
 - Explicit teacher emphasis / evidence: unknown
+
+Keep immutable originals under `01_Sources/Biology/Raw/`; write derived notes separately. Record revisions without overwriting the original. Existing origin labels retain their history; follow [[AGENTS#Provenance and teacher coverage|provenance rules]] and log corrections below.
 
 ## Why Was This Assigned?
 
@@ -37,7 +41,7 @@ Record teacher intent only when explicitly stated; cite wording and location/dat
 
 ## Chunk Coverage
 
-Plan the entire assigned extent before extraction. Long sources require multiple chunks; a short source still needs one. Include captions, tables, diagrams, sidebars, questions, and supplements. Use precise pages, slides, timestamps, headings, or image regions.
+Plan the entire assigned extent before extraction. Long sources require multiple chunks; a short source still needs one. Explicitly include the final page/slide/timestamp and any in-scope appendices. Include captions, tables, diagrams, sidebars, questions, and supplements. Use precise pages, slides, timestamps, headings, or image regions.
 
 | Chunk ID | Location | Status | Checked | Issues |
 | --- | --- | --- | --- | --- |
@@ -76,12 +80,14 @@ Record potential misconceptions here ONLY if the source itself identifies them, 
 
 Account for every knowledge point worth retaining, including relevant figure, vocabulary, and process content. A suggested link is not a completed transfer: check that the Concept contains the point and a backlink to its evidence.
 
+Search existing concept names, aliases, and content first. Reuse persistent pages across Units 1–3 and later units; add evidence and unit membership rather than creating a unit/source-specific duplicate. Preserve conflicting claims with their separate source evidence in the Concept page. Transfer to a draft Concept is permitted; it does not imply student verification.
+
 | Knowledge Point ID / Original Location | Concept Note and Section OR No Concept Needed — Reason | Transfer Checked |
 | --- | --- | --- |
 
 ## Coverage Verification
 
-- [ ] All planned chunks processed; counts match the Registry and cover the full assigned extent.
+- [ ] All planned chunks processed and checked by a named human; counts match the Registry and cover the full assigned extent, including its end.
 - [ ] Text checked against the original.
 - [ ] Figures, tables, diagrams, captions, and labels checked against the original.
 - [ ] OCR/transcript errors handled, or method explicitly recorded as not applicable.
@@ -91,10 +97,15 @@ Account for every knowledge point worth retaining, including relevant figure, vo
 - [ ] Original source preserved; any preservation gap resolved before verification.
 - [ ] Registry updated, including status, counts, Digest link, and issues.
 
-Verified by / date:
+Coverage verified by (human) / date:
 
 Student check details / date / pending diagrams:
 
 Open learning questions / next actions:
 
 Do not mark `verified` until the checklist is complete. Keep `student_checked: false` until the student's own check is complete.
+
+## Change History
+
+| Date | Revision / Provenance Correction | Previous Value / Original | New Value / New Original | Evidence / Reason | Affected Chunks / Concepts Reopened |
+| --- | --- | --- | --- | --- | --- |
