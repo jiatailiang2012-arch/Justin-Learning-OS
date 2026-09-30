@@ -1,0 +1,33 @@
+# Credentials and local secrets
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temporary processing output; preserve original learning sources elsewhere
+tmp/
+temp/
+.tmp/
+.cache/
+__pycache__/
+*.pyc
+*.tmp
+*.temp
+*.log
+~$*
+
+# Obsidian machine-specific state and trash
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.trash/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
