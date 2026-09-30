@@ -4,7 +4,7 @@ Persistent concept-based learning wiki for high-school Honors Biology. Biology U
 
 **Coverage is guaranteed at the Source layer. Understanding is built at the Concept layer.**
 
-Open this existing project directory as an Obsidian vault. Its current folder name is `Justin-Bio-Learning-OS`; the intended future private GitHub repository name is `Justin-Learning-OS`. No nested vault is needed.
+Open this existing project directory as an Obsidian vault. Its current folder name is `Justin-Bio-Learning-OS`; the GitHub repository name is `Justin-Learning-OS`. No nested vault is needed.
 
 [[AGENTS|Operating specification]] is the authoritative project guide. See [[99_System/Migration-Audit-2026-09-30|Migration audit and validation]] for changes and boundaries. This vault is Justin's school-learning system, not a family, medical, or research knowledge base.
 
@@ -46,4 +46,4 @@ This migration does not ingest or process learning materials, install tools, cre
 
 Skill-Anything remains a future optional experiment using the original SYuan03 repository, outside this vault in a separate pilot and Python virtual environment. Start with only needed PDF/video capabilities, then assess coverage, chunk/end handling, citations, figures, and reliability. No installation or evaluation is part of this migration; the wiki remains independent of any extraction engine.
 
-Git tracks Markdown, originals intentionally retained for versioning, and `.gitkeep` placeholders for empty folders. Keep passwords, API keys, secrets, caches, and temporary processing files out of Git. `.gitignore` is a safeguard, not a secret detector; inspect staged changes before any future commit or push. No GitHub connection or publication is part of this setup. Any future repository must be private and named `Justin-Learning-OS`.
+Git tracks Markdown, originals intentionally retained for versioning, and `.gitkeep` placeholders for empty folders. Keep passwords, API keys, secrets, caches, and temporary processing files out of Git. `.gitignore` is a safeguard, not a secret detector; inspect staged changes before any future commit or push. No GitHub connection or publication is part of this setup. Repository visibility is user-controlled. The current Justin-Learning-OS repository is intentionally public. Do not change repository visibility unless explicitly instructed by the user.
